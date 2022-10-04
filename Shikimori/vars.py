@@ -1,7 +1,7 @@
 import os
 
 
-ENV = bool(os.environ.get("ENV", True))
+ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
     TOKEN = os.environ.get("BOT_TOKEN", "5756571846:AAF1XIJ7SwOrkpQm6p_1YgEuE7GoX6fu1qw")
@@ -38,7 +38,7 @@ if ENV:
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001626554919")
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
-    PORT = int(os.environ.get("PORT", 5000))
+    PORT = int(os.environ.get("PORT"))
     CERT_PATH = os.environ.get("CERT_PATH")
     API_ID = os.environ.get("API_ID", "12335430")
     API_HASH = os.environ.get("API_HASH", "2a9046339be3b90ec40891896b95f77e")

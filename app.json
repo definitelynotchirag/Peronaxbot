@@ -23,26 +23,26 @@
       "BOT_TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": ""
+         "value": "5756571846:AAF1XIJ7SwOrkpQm6p_1YgEuE7GoX6fu1qw"
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "12335430"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "2a9046339be3b90ec40891896b95f77e"
       },    
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "2088106582"
+         "value": "1109460378"
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-        "value": "",
+        "value": "1d15e75b-c831-4a69-b3a8-b0743d662f3b",
         "required": false
       },
       "HEROKU_APP_NAME": {
@@ -51,29 +51,29 @@
       },
       "BOT_USERNAME": {
          "description": "Username of your bot without the @",
-         "value": "micchon_shikimori_bot",
+         "value": "perona_xbot",
          "required": true
       },
 
       "BOT_ID": {
          "description": "to get your bot_id using other bot or userbot",
-         "value": "5169508699",
+         "value": "5756571846",
          "required": true
       },
 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "SOME1HING"
+         "value": "chirag57"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to shikimori support than consider you made an enemy.",
          "required": true,
-         "value": "tyranteyeeee"
+         "value": "AnimeChattingGrp"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": "mongodb+srv://SOME1HING:some1hing123@some1hing-db.hfyyfjfh.mongodb.net/?retryWrites=true&w=majorityPYTHONPATH=/app"
+         "value": "mongodb+srv://chirag57:A9325442737a@cluster0.yeisy5y.mongodb.net/?retryWrites=true&w=majority"
       },
       "LOG_CHANNEL": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -83,12 +83,12 @@
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
          "required": false,
-         "value": "-xyz"
+         "value": "RO128OO27KM4BFJI"
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": false,
-         "value": "-xyz"
+         "value": "NJ20T2PMH1OH"
       }, 
       "API_WEATHER": {
         "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
@@ -97,18 +97,18 @@
       },
       "DATABASE_URL": {
         "description": "Put sql based database link. Recommended to use Elephant SQL.",
-        "value": "postgres://dsnjbjab:saifhsudfasfihaif@sdsfs.db.elephantsql.com/dsnjbjab",
+        "value": "postgresql://bbiovhcz:I6YB-BEFAlMclvJNhAtzBLMMY8oE8K0P@satao.db.elephantsql.com/bbiovhcz",
         "required": true
       },
       "FUNC_DB_URL": {
          "description": "Put sql based database link. Recommended to use Elephant SQL. MUST BE DIFFERENT THAN DATABSE_URL",
-         "value": "postgres://dsnjbjab:saifhsudfasfihaif@sdsfs.db.elephantsql.com/dsnjbjab",
+         "value": "postgresql://bbiovhcz:I6YB-BEFAlMclvJNhAtzBLMMY8oE8K0P@satao.db.elephantsql.com/bbiovhcz",
          "required": true
        },
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py, /sh, /eval etc.).",
          "required": false,
-         "value": ""
+         "value": "1109460378"
       },
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
@@ -117,12 +117,12 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": ""
+         "value": "1109460378"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": ""
+         "value": "1109460378"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
@@ -150,7 +150,8 @@
       },
       "ARQ_API": {
          "description": "Get this from @ARQRobot.",
-         "required": true
+         "required": true,
+         "value": "KAWQFT-VKAEYR-AAMZCN-CKSEUZ-ARQ"
       },
       "WALL_API": {
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/ by writting a email to them.",
@@ -160,27 +161,27 @@
       "ERROR_LOG_CHANNEL": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1001599383497"
+         "value": "-1001549961507"
       },
       "REDIS_URL": {
          "description": "Paste your redis url in format redis://<username of admin role>:<password of admin role>@<endoint url>/<database name>",
          "required": true,
-         "value": "redis://SOME1HING:some1hing123@redis-11054.c9.us-east-1-4.ec2.cloud.redislabs.com:11054/shikimori-db"
+         "value": "redis://admin:A9325442737a@@redis-10041.c301.ap-south-1-1.ec2.cloud.redislabs.com:10041/bot-free-db"
       },  
       "ANIME_NAME": {
          "description": "If your bot is based on some anime, type the name of anime. Otherwise, manually edit PM_START_TEXT in main.py",
          "required": false,
-         "value": "Shikimori's Not Just a Cutie"
+         "value": "One Piece"
       },
       "START_MEDIA": {
          "description": "Paste link of your media(img, video or gif) that you want to show in /start. Otherwise put None.",
          "required": false,
-         "value": "https://telegra.ph/file/9235d57807362b4e227a3.mp4"
+         "value": "https://dthezntil550i.cloudfront.net/5y/latest/5y2207261412029340005917508/1280_960/b880d9ee-d293-41c6-8e6a-bb406136c28f.png"
       },
       "UPDATE_CHANNEL": {
          "description": "Leave it as it is, or if you have your own update channel, put channel username without @.",
          "required": true,
-         "value": "Shikimori_bot_Updates"
+         "value": "macnetwork7"
       },
       "APOD_API_KEY": {
          "description": "Get yours from https://api.nasa.gov/ to get NASA's picture of the day.",
@@ -190,7 +191,7 @@
       "ALIVE_MEDIA": {
          "description": "Paste link of your media(img, video or gif) that you want to show in /alive. Otherwise put None.",
          "required": false,
-         "value": "https://telegra.ph/file/2b04f7812f22b983f8a10.mp4"
+         "value": "https://64.media.tumblr.com/049aead75e27424bec91d5dab74f34bf/f3b13484cc6bec77-a8/s1280x1920/0aeae8fa436d8c21ec575963418428dc5ace9e2d.jpg"
       },
       "AI_API_KEY": {
          "description": "AI API key, get from @Void_HeadQuarters.",
@@ -200,17 +201,17 @@
       "STATS_IMG": {
          "description": "Paste image link for /stats. Otherwise keep it blank.",
          "required": false,
-         "value": "https://telegra.ph/file/fa1acd48ae767baa02e3f.jpg"
+         "value": "https://64.media.tumblr.com/049aead75e27424bec91d5dab74f34bf/f3b13484cc6bec77-a8/s1280x1920/0aeae8fa436d8c21ec575963418428dc5ace9e2d.jpg"
       },
       "NETWORK": {
          "description": "If your bot is connected to a network, Type the Network name. Only type one Network name. Otherwise leave it blank, or just leave【V๏ɪ፝֟𝔡】»Network«",
          "required": false,
-         "value": "【V๏ɪ፝֟𝔡】»Network«"
+         "value": "Mac "
       },
       "NETWORK_USERNAME": {
          "description": "If you have put a netowrk name, you also have to put its username without @",
          "required": false,
-         "value": "VoidxNetwork"
+         "value": "macnetwork7"
       },
       "OWNER_WELCOME_MEDIA": {
          "description": "URL of media that you want to show when owner of bot joins any chat. Supported file types (jpg, png, gif, webp, mkv, mp4).",
@@ -220,7 +221,7 @@
       "INLINE_IMG": {
          "description": "URL of image for inline querry. Must be a still image.",
          "required": false,
-         "value": "https://telegra.ph/file/8cec66d01df8c0071ebaa.jpg"
+         "value": "https://64.media.tumblr.com/049aead75e27424bec91d5dab74f34bf/f3b13484cc6bec77-a8/s1280x1920/0aeae8fa436d8c21ec575963418428dc5ace9e2d.jpg"
       }
    }  
 }

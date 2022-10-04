@@ -139,7 +139,7 @@ class Development(Config):
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
     ERROR_LOG_CHANNEL = -1001626554919  # needed to make sure 'save from' messages persist
-    HEROKU_API_KEY = 1d15e75b-c831-4a69-b3a8-b0743d662f3b   # Your Heroku API key, get it from 'https://dashboard.heroku.com/account
+    HEROKU_API_KEY = "1d15e75b-c831-4a69-b3a8-b0743d662f3b"   # Your Heroku API key, get it from 'https://dashboard.heroku.com/account
     HEROKU_APP_NAME = (
         "peronatest"  # Enter the Heroku app name here (Must an exact same name with your input above)
     )

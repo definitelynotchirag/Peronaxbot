@@ -1,7 +1,7 @@
 import os
 
 
-ENV = bool(os.environ.get("ENV", False))
+ENV = bool(os.environ.get("ENV", True))
 
 if ENV:
     TOKEN = os.environ.get("BOT_TOKEN", "5756571846:AAF1XIJ7SwOrkpQm6p_1YgEuE7GoX6fu1qw")

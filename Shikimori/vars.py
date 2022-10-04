@@ -49,7 +49,7 @@ if ENV:
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://chirag57:A9325442737a@cluster0.yeisy5y.mongodb.net/?retryWrites=true&w=majority")
     ARQ_API = os.environ.get("ARQ_API_BASE_URL")
     LOAD = os.environ.get("LOAD", "").split()
-    NO_LOAD = os.environ.get("NO_LOAD", None)
+    NO_LOAD = os.environ.get("NO_LOAD")
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", False))
     WORKERS = int(os.environ.get("WORKERS", 8))

@@ -20,9 +20,9 @@ class Config(object):
     BOT_TOKEN = "5756571846:AAF1XIJ7SwOrkpQm6p_1YgEuE7GoX6fu1qw"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 1109460378  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "chirag57"
-    SUPPORT_CHAT = "AnimeChattingGrp"  # Your own group for support, do not add the @
+    SUPPORT_CHAT = "peronaxsupport"  # Your own group for support, do not add the @
     LOG_CHANNEL = (
-        -1001626554919
+        -1001795543122
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
@@ -61,7 +61,7 @@ class Config(object):
     AI_API_KEY = "awoo"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
-    ERROR_LOG_CHANNEL = -1001626554919  # needed to make sure 'save from' messages persist
+    ERROR_LOG_CHANNEL = -1001795543122  # needed to make sure 'save from' messages persist
     HEROKU_API_KEY = "1d15e75b-c831-4a69-b3a8-b0743d662f3b"   # Your Heroku API key, get it from 'https://dashboard.heroku.com/account
     HEROKU_APP_NAME = (
         "peronatest"  # Enter the Heroku app name here (Must an exact same name with your input above)
@@ -70,10 +70,10 @@ class Config(object):
     APOD_API_KEY = "awoo"
     REDIS_URL = "redis://admin:A9325442737a@@redis-10041.c301.ap-south-1-1.ec2.cloud.redislabs.com:10041/bot-free-db"
     ANIME_NAME = "One Piece"
-    START_MEDIA = "https://dthezntil550i.cloudfront.net/5y/latest/5y2207261412029340005917508/1280_960/b880d9ee-d293-41c6-8e6a-bb406136c28f.png"
+    START_MEDIA = "https://telegra.ph/file/2a965bf4dcd562ce4e9da.mp4"
     BOT_USERNAME = "perona_xbot"
     UPDATE_CHANNEL = "macnetwork7"
-    ALIVE_MEDIA = "https://64.media.tumblr.com/049aead75e27424bec91d5dab74f34bf/f3b13484cc6bec77-a8/s1280x1920/0aeae8fa436d8c21ec575963418428dc5ace9e2d.jpg"
+    ALIVE_MEDIA = "https://telegra.ph/file/2a965bf4dcd562ce4e9da.mp4"
     BOT_ID = 5756571846
     STATS_IMG = "awoo"
     NETWORK_USERNAME = "macnetwork7"
@@ -97,9 +97,9 @@ class Development(Config):
     BOT_TOKEN = "5756571846:AAF1XIJ7SwOrkpQm6p_1YgEuE7GoX6fu1qw"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 1109460378  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "chirag57"
-    SUPPORT_CHAT = "AnimeChattingGrp"  # Your own group for support, do not add the @
+    SUPPORT_CHAT = "peronaxsupport"  # Your own group for support, do not add the @
     LOG_CHANNEL = (
-        -1001626554919
+        -1001795543122
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
@@ -138,7 +138,7 @@ class Development(Config):
     AI_API_KEY = "awoo"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
-    ERROR_LOG_CHANNEL = -1001626554919  # needed to make sure 'save from' messages persist
+    ERROR_LOG_CHANNEL = -1001795543122 # needed to make sure 'save from' messages persist
     HEROKU_API_KEY = "1d15e75b-c831-4a69-b3a8-b0743d662f3b"   # Your Heroku API key, get it from 'https://dashboard.heroku.com/account
     HEROKU_APP_NAME = (
         "peronatest"  # Enter the Heroku app name here (Must an exact same name with your input above)
@@ -147,10 +147,10 @@ class Development(Config):
     APOD_API_KEY = "awoo"
     REDIS_URL = "redis://admin:A9325442737a@@redis-10041.c301.ap-south-1-1.ec2.cloud.redislabs.com:10041/bot-free-db"
     ANIME_NAME = "One Piece"
-    START_MEDIA = "https://dthezntil550i.cloudfront.net/5y/latest/5y2207261412029340005917508/1280_960/b880d9ee-d293-41c6-8e6a-bb406136c28f.png"
+    START_MEDIA = "https://telegra.ph/file/2a965bf4dcd562ce4e9da.mp4"
     BOT_USERNAME = "perona_xbot"
     UPDATE_CHANNEL = "macnetwork7"
-    ALIVE_MEDIA = "https://64.media.tumblr.com/049aead75e27424bec91d5dab74f34bf/f3b13484cc6bec77-a8/s1280x1920/0aeae8fa436d8c21ec575963418428dc5ace9e2d.jpg"
+    ALIVE_MEDIA = "https://telegra.ph/file/2a965bf4dcd562ce4e9da.mp4"
     BOT_ID = 5756571846
     STATS_IMG = "awoo"
     NETWORK_USERNAME = "macnetwork7"

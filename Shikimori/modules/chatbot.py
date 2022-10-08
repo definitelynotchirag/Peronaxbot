@@ -133,7 +133,7 @@ def chatbot_msg(update: Update, context: CallbackContext):
             return
         Message = message.text
         bot.send_chat_action(chat_id, action="typing")
-        chatbot = requests.get('https://itsprodev.cf/chatbot/SOME1HING.php?api=' + api + '&message=' + Message)
+        chatbot = requests.get(f"https://kukiapi.xyz/api/apikey=5281955434-KUKIyq4NCB2Ca8/himawari/@nekoarsh/message={Message}")
         Chat = json.loads(chatbot.text)
         Chat = Chat['reply']
         sleep(0.3)

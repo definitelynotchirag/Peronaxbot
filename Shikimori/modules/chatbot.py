@@ -163,6 +163,4 @@ __mod_name__ = "ChatBot"
 __help__ = """
 *Admins only Commands*:
   ➢ `/Chatbot`*:* Shows chatbot control panel
-
-*Thx @mizuhara_chan1 for the API*
 """

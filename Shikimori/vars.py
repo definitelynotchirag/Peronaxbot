@@ -11,12 +11,12 @@ if ENV:
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
      
-    ERROR_LOG_CHANNEL = os.environ.get("ERROR_LOG_CHANNEL", "-1001626554919")
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "chiragme57")
+    ERROR_LOG_CHANNEL = os.environ.get("ERROR_LOG_CHANNEL", "-1001795543122")
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "chirag57")
 
     try:
-        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
-        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
+        DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "1716925723").split())
+        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "1109460378").split())
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
@@ -35,7 +35,7 @@ if ENV:
     except ValueError:
         raise Exception("Your tiger users list does not contain valid integers.")
 
-    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001626554919")
+    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001795543122")
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT"))
@@ -62,21 +62,21 @@ if ENV:
     API_WEATHER = os.environ.get("API_WEATHER", None)
     WALL_API = os.environ.get("WALL_API", None)
     REDIS_URL = os.environ.get("REDIS_URL", "redis://admin:A9325442737a@@redis-10041.c301.ap-south-1-1.ec2.cloud.redislabs.com:10041/bot-free-db")
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "AnimeChattingGrp")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "peronaxsupport")
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     ARQ_API_KEY = os.environ.get("ARQ_API", "KAWQFT-VKAEYR-AAMZCN-CKSEUZ-ARQ")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", "peronatest")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY","1d15e75b-c831-4a69-b3a8-b0743d662f3b")
     APOD_API_KEY = os.environ.get("APOD_API_KEY", None)
     ANIME_NAME = os.environ.get("ANIME_NAME", "One Piece")
-    START_MEDIA = os.environ.get("START_MEDIA", "https://dthezntil550i.cloudfront.net/5y/latest/5y2207261412029340005917508/1280_960/b880d9ee-d293-41c6-8e6a-bb406136c28f.png")
+    START_MEDIA = os.environ.get("START_MEDIA", "https://telegra.ph/file/2a965bf4dcd562ce4e9da.mp4")
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "perona_xbot")
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "macnetwork7")
-    ALIVE_MEDIA = os.environ.get("ALIVE_MEDIA", "https://dthezntil550i.cloudfront.net/5y/latest/5y2207261412029340005917508/1280_960/b880d9ee-d293-41c6-8e6a-bb406136c28f.png")
+    ALIVE_MEDIA = os.environ.get("ALIVE_MEDIA", "https://telegra.ph/file/2a965bf4dcd562ce4e9da.mp4")
     BOT_ID = os.environ.get("BOT_ID", "5756571846")
     STATS_IMG = os.environ.get("STATS_IMG", None)
-    NETWORK = os.environ.get("NETWORK", None)
-    NETWORK_USERNAME = os.environ.get("NETWORK_USERNAME", None)
+    NETWORK = os.environ.get("NETWORK", "Mac")
+    NETWORK_USERNAME = os.environ.get("NETWORK_USERNAME", "macnetwork7")
     MEDIA_GM = os.environ.get("MEDIA_GM", None)
     MEDIA_GN = os.environ.get("MEDIA_GN", None)
     MEDIA_HELLO = os.environ.get("MEDIA_HELLO", None)

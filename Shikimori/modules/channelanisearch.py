@@ -46,7 +46,7 @@ async def cas(_, message):
     query = message.text.split(None, 1)[1]
     m = await message.reply_text("Searching")
     # reddit = await arq.reddit(subreddit)
-    async for message in app.search_messages(chat_id=-1001787236718, query=query, limit=120):
+    async for message in app.search_messages(chat_id="Anime_Climax", query=query, limit=120):
     # print(message.text)
     # if not reddit.ok:
         return await m.edit_text(message.text)

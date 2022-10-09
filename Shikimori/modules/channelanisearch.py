@@ -65,7 +65,7 @@ async def cas(_, message):
         # read all lines in a list
     fp = requests.get("https://raw.githubusercontent.com/definitelynotchirag/AnimeTelegramLinks/main/README.md")
 
-    content = json.loads(fp.text)
+    content = fp.text
 
     lines = content.readlines()
 

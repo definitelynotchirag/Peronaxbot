@@ -336,3 +336,9 @@
 # #    print(f'Found {s} in line {index}') 
  
 # # f.close() 
+import requests
+import json
+fp = requests.get("https://raw.githubusercontent.com/definitelynotchirag/AnimeTelegramLinks/main/README.md")
+# content = json.load(fp.text)
+print(fp.text)
+# print(content)

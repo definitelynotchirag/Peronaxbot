@@ -30,10 +30,15 @@
 #  ❍ `/anidl` : Search for Anime in Anime Clan Index
 #  """
 
+from urllib import request
 from pyrogram import filters
 
 from Shikimori import pbot as app, arq
 from Shikimori.utils.errors import capture_err
+
+import json
+import re
+import requests
 
 __mod_name__ = "Channel Anime Search"
 
@@ -41,15 +46,52 @@ __mod_name__ = "Channel Anime Search"
 
 @app.on_message(filters.command("anidl"))
 async def cas(_, message):
-    if len(message.command) != 2:
+    if len(message.command) == 0:
         return await message.reply_text("/anidl needs an argument")
+
     query = message.text.split(None, 1)[1]
-    m = await message.reply_text("Searching")
+
+    # word = input("Enter Anime name")
+
+    capitalizedword = query.capitalize()
+
+    # print(capitalizedword)
+
+    wholequery = capitalizedword.split()
+
+    # print(wholequery[0])
+
+    # with open(r'F:\ShikimoriBot\animelinkstext.txt', 'r') as fp:
+        # read all lines in a list
+    fp = requests.get("https://raw.githubusercontent.com/definitelynotchirag/AnimeTelegramLinks/main/README.md")
+
+    content = json.loads(fp.text)
+
+    lines = content.readlines()
+
+
+    for line in lines:
+        if line.find(wholequery[0], re.IGNORECASE) != -1:
+            await message.reply_text("Searching")
+            await message.edit_text("Found The Anime")
+            # print(query, 'string exists in file')
+            # print('Line Number:', lines.index(line))
+            # print('Line:', line)
+            caption = f"""
+            **Anime** {query}
+            **Link** {line}            
+            """
+            await message.edit_text(caption)
+
+            # print(line)
+
+    # m = await message.reply_text("Searching")
     # reddit = await arq.reddit(subreddit)
-    async for message in app.search_messages(chat_id="Anime_Climax", query=query, limit=120):
+
+    # async for message in app.search_messages(chat_id="Anime_Climax", query=query, limit=120):
     # print(message.text)
     # if not reddit.ok:
-        return await m.edit_text(message.text)
+        # return await m.edit_text(message.text)
 #     reddit = reddit.result
 #     nsfw = reddit.nsfw
 #     sreddit = reddit.subreddit
@@ -71,6 +113,6 @@ async def cas(_, message):
 
 __mod_name__ = "Channel Anime Search"
 __help__ = """
-*Channel Anime Search"
+*Channel Anime Search*
  ❍ `/anidl` : Search for Anime in Anime Clan Index
 """

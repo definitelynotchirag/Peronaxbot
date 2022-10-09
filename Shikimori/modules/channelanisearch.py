@@ -15,6 +15,7 @@ async def channelanisearch(update: Update, context: CallbackContext, client , me
     text1 = message.text[len('/anidl '):]
     async for message in Client.search_messages(chat_id=-1001787236718, query=text1, limit=120):
         message.reply_text(message.text)
+        print(message.text)
 
 CAS_HANDLER = DisableAbleCommandHandler(["anidl"], channelanisearch , run_async=True)
 

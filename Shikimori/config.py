@@ -158,3 +158,6 @@ class Development(Config):
     INLINE_IMG = "https://dthezntil550i.cloudfront.net/5y/latest/5y2207261412029340005917508/1280_960/b880d9ee-d293-41c6-8e6a-bb406136c28f.png"
     API_WEATHER = "awoo"
     OWNER_WELCOME_MEDIA = ""
+    AUTH_USERS = "1109460378"
+    TG_BOT_TOKEN = "5756571846:AAF1XIJ7SwOrkpQm6p_1YgEuE7GoX6fu1qw"
+    APP_ID = "12335430"

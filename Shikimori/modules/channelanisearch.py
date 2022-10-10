@@ -65,23 +65,22 @@ async def cas(_, message):
     with open(r'animelinkstext.txt', 'r') as fp:
         # read all lines in a list
     # fp = requests.get("https://raw.githubusercontent.com/definitelynotchirag/AnimeTelegramLinks/main/README.md")
-        content = fp.read()
+        # content = fp.read()
+        lines = fp.readlines()
 
-    lines = content.readlines()
 
-
-    for line in lines:
-        if line.find(wholequery[0], re.IGNORECASE) != -1:
-            await message.reply_text("Searching")
-            await message.edit_text("Found The Anime")
+        for line in lines:
+            if line.find(wholequery[0], re.IGNORECASE) != -1:
+                await message.reply_text("Searching")
+                await message.edit_text("Found The Anime")
             # print(query, 'string exists in file')
             # print('Line Number:', lines.index(line))
             # print('Line:', line)
-            caption = f"""
-            **Anime** {query}
-            **Link** {line}            
-            """
-            await message.edit_text(caption)
+                caption = f"""
+                **Anime** {query}
+                **Link** {line}            
+                """
+                await message.edit_text(caption)
 
             # print(line)
 

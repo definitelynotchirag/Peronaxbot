@@ -81,13 +81,13 @@ async def cas(_, message):
                 """
                 await message.reply_text(caption)
 
-            elif line.find(wholequery[0], re.IGNORECASE) == -1:
-                m = line.find(wholequery[1], re.IGNORECASE)
+            # elif line.find(wholequery[0], re.IGNORECASE) == -1:
+            #     m = line.find(wholequery[1], re.IGNORECASE)
 
-                caption = f"""
-                **Query** - {query} \n **Link** - \n {m}            
-                """
-                await message.reply_text(caption)
+            #     caption = f"""
+            #     **Query** - {query} \n **Link** - \n {m}            
+            #     """
+            #     await message.reply_text(caption)
 
             else :
                 await message.reply_text("No Anime Found Try searching another keyword from Anime Name")

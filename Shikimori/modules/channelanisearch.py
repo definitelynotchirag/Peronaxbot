@@ -77,7 +77,7 @@ async def cas(_, message):
             # print('Line Number:', lines.index(line))
             # print('Line:', line)
                 caption = f"""
-                **Query** - {query} \n **Link** - \n {line}            
+                **Query** - {query} \n**Link** - \n{line}            
                 """
                 await message.reply_text(caption)
 

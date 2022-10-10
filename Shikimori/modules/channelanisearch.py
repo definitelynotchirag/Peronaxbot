@@ -44,10 +44,10 @@ __mod_name__ = "Channel Anime Search"
 
 
 
-@app.on_message(filters.command("anidl"))
+@app.on_message(filters.command("anisearch"))
 async def cas(_, message):
-    if len(message.command) == 0:
-        return await message.reply_text("/anidl needs an argument")
+    if len(message.command) < 2:
+        return await message.reply_text("/anisearch needs an argument")
 
     query = message.text.split(None, 1)[1]
 
@@ -61,11 +61,10 @@ async def cas(_, message):
 
     # print(wholequery[0])
 
-    # with open(r'F:\ShikimoriBot\animelinkstext.txt', 'r') as fp:
+    with open(r'F:\ShikimoriBot\animelinkstext.txt', 'r') as fp:
         # read all lines in a list
-    fp = requests.get("https://raw.githubusercontent.com/definitelynotchirag/AnimeTelegramLinks/main/README.md")
-
-    content = fp.text
+    # fp = requests.get("https://raw.githubusercontent.com/definitelynotchirag/AnimeTelegramLinks/main/README.md")
+        content = fp.text
 
     lines = content.readlines()
 
@@ -114,5 +113,5 @@ async def cas(_, message):
 __mod_name__ = "Channel Anime Search"
 __help__ = """
 *Channel Anime Search*
- ❍ `/anidl` : Search for Anime in Anime Clan Index
+ ❍ `/anisearch` : Search for Anime in Anime Clan Index
 """

@@ -36,6 +36,7 @@ from pyrogram import filters
 from Shikimori import pbot as app, arq
 from Shikimori.utils.errors import capture_err
 
+import os
 import json
 import re
 import requests
@@ -60,8 +61,8 @@ async def cas(_, message):
     wholequery = capitalizedword.split()
 
     # print(wholequery[0])
-
-    with open(r'F:\ShikimoriBot\animelinkstext.txt', 'r') as fp:
+    print(os.getcwd())
+    with open(r'animelinkstext.txt', 'r') as fp:
         # read all lines in a list
     # fp = requests.get("https://raw.githubusercontent.com/definitelynotchirag/AnimeTelegramLinks/main/README.md")
         content = fp.text

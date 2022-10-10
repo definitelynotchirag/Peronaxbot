@@ -71,8 +71,8 @@ async def cas(_, message):
 
         for line in lines:
             if line.find(wholequery[0], re.IGNORECASE) != -1:
-                await message.reply_text("Searching")
-                await message.edit_text("Found The Anime")
+                # await message.reply_text("Searching")
+                # await message.edit_text("Found The Anime")
             # print(query, 'string exists in file')
             # print('Line Number:', lines.index(line))
             # print('Line:', line)
@@ -80,7 +80,7 @@ async def cas(_, message):
                 **Anime** {query}
                 **Link** {line}            
                 """
-                await message.edit_text(caption)
+                await message.reply_text(caption)
 
             # print(line)
 

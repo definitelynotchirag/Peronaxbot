@@ -89,8 +89,8 @@ async def cas(_, message):
             #     """
             #     await message.reply_text(caption)
 
-            else :
-                await message.reply_text("No Anime Found Try searching another keyword from Anime Name")
+        # else :
+        #     await message.reply_text("No Anime Found Try searching another keyword from Anime Name")
 
             # print(line)
 

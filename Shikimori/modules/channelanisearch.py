@@ -36,7 +36,7 @@ from pyrogram import filters
 from Shikimori import pbot as app, arq
 from Shikimori.utils.errors import capture_err
 from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler, Filters, MessageHandler)
-
+from telegram import Update
 
 import os
 import json
@@ -49,7 +49,7 @@ __mod_name__ = "Channel Anime Search"
 
 
 @app.on_message(filters.command("anisearch"))
-async def cas(_, message):
+async def cas(_, message , update: Update, context: CallbackContext):
     if len(message.command) < 2:
         return await message.reply_text("/anisearch needs an argument")
 

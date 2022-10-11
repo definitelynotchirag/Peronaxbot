@@ -49,7 +49,7 @@ __mod_name__ = "Channel Anime Search"
 
 
 @app.on_message(filters.command("anisearch"))
-async def cas(_, message , update: Update, context: CallbackContext):
+async def cas(_, message):
     if len(message.command) < 2:
         return await message.reply_text("/anisearch needs an argument")
 
@@ -64,7 +64,7 @@ async def cas(_, message , update: Update, context: CallbackContext):
     wholequery = capitalizedword.split()
 
     # print(wholequery[0])
-    print(os.getcwd())
+    # print(os.getcwd())
     with open(r'animelinkstext.txt', 'r') as fp:
         # read all lines in a list
     # fp = requests.get("https://raw.githubusercontent.com/definitelynotchirag/AnimeTelegramLinks/main/README.md")
@@ -123,11 +123,11 @@ async def cas(_, message , update: Update, context: CallbackContext):
 #     except Exception as e:
 #         await m.edit_text(e.MESSAGE)
 
-ANISEARCH_HANDLER = CommandHandler("anisearch", cas, run_async = True)
+# ANISEARCH_HANDLER = CommandHandler("anisearch", cas, run_async = True)
 
-dispatcher.add_handler(ANISEARCH_HANDLER)
+# dispatcher.add_handler(ANISEARCH_HANDLER)
 
-__handlers__ = [ANISEARCH_HANDLER]
+# __handlers__ = [ANISEARCH_HANDLER]
 
 __mod_name__ = "Channel Anime Search"
 __help__ = """

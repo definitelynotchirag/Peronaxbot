@@ -35,11 +35,14 @@ from pyrogram import filters
 
 from Shikimori import pbot as app, arq
 from Shikimori.utils.errors import capture_err
+from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler, Filters, MessageHandler)
+
 
 import os
 import json
 import re
 import requests
+from Shikimori import  dispatcher
 
 __mod_name__ = "Channel Anime Search"
 
@@ -119,6 +122,12 @@ async def cas(_, message):
 #         await m.delete()
 #     except Exception as e:
 #         await m.edit_text(e.MESSAGE)
+
+ANISEARCH_HANDLER = CommandHandler("anisearch", cas, run_async = True)
+
+dispatcher.add_handler(ANISEARCH_HANDLER)
+
+__handlers__ = [ANISEARCH_HANDLER]
 
 __mod_name__ = "Channel Anime Search"
 __help__ = """

@@ -38,7 +38,7 @@ if ENV:
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001795543122")
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
-    PORT = int(os.environ.get("PORT"))
+    PORT = int(os.environ.get("PORT", 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
     API_ID = os.environ.get("API_ID", "12335430")
     API_HASH = os.environ.get("API_HASH", "2a9046339be3b90ec40891896b95f77e")

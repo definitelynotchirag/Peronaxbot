@@ -68,7 +68,6 @@ async def cas(_, message):
     with open(r'animelinkstext.txt', 'r') as fp:
         # read all lines in a list
     # fp = requests.get("https://raw.githubusercontent.com/definitelynotchirag/AnimeTelegramLinks/main/README.md")
-        # content = fp.read()
         lines = fp.readlines()
 
 
@@ -83,6 +82,14 @@ async def cas(_, message):
                 **Query** - {query} \n**Link** - \n{line}            
                 """
                 await message.reply_text(caption)
+
+
+@app.on_message(filters.command("aniindex"))
+async def aniindex(_, message):
+        with open(r'animelinkstext.txt', 'r') as fp:
+            content = fp.read()
+            await message.reply_text(content)
+        
 
             # elif line.find(wholequery[0], re.IGNORECASE) == -1:
             #     m = line.find(wholequery[1], re.IGNORECASE)

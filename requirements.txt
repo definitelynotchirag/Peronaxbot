@@ -82,7 +82,7 @@ fuzzysearch
 img2pdf
 multicolorcaptcha
 git+https://github.com/python-telegram-bot/ptbcontrib.git
-PyYAML>5.0
+
 loguru
 aiofiles
 pytube
@@ -90,3 +90,4 @@ yt_dlp
 pytimeparse
 youtube_dl
 nltk
+ruamel.yaml

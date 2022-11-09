@@ -1,0 +1,20 @@
+{
+    "name": "Peronaxbot",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "pip3 install -r requirements.txt",
+        "test": "",
+        "start": "python3 -m Shikimori"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/definitelynotchirag/Peronaxbot.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/definitelynotchirag/Peronaxbot/issues"
+    },
+    "homepage": "https://github.com/definitelynotchirag/Peronaxbot#readme"
+}

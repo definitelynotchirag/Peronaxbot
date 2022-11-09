@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "build": "pip3 install -r requirements.txt",
+        "build": "python -m pip install --upgrade pip && pip3 install --upgrade pip setuptools && pip3 install -r requirements.txt",
         "test": "",
         "start": "python3 -m Shikimori"
     },
